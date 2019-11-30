@@ -1,0 +1,23 @@
+kind: pipeline
+name: docker-custom-images
+
+steps:
+- name: netcore-sdk-3-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/netcore-sdk-3-0
+    dockerfile: netcore-sdk-3-0/Dockerfile
+    dry_run: true
+    purge: false
+
+  when:
+    event:
+    - push
+
+volumes:
+  - name: docker_sock
+    host:
+      path: /var/run/docker.sock
