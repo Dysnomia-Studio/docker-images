@@ -17,6 +17,21 @@ steps:
     event:
     - push
 
+- name: netcore-runtime-3-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/netcore-runtime-3-0
+    dockerfile: netcore-runtime-3-0/Dockerfile
+    dry_run: true
+    purge: false
+
+  when:
+    event:
+    - push
+
 volumes:
   - name: docker_sock
     host:
