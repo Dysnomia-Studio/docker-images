@@ -13,10 +13,6 @@ steps:
     dry_run: true
     purge: false
 
-  when:
-    event:
-    - push
-
 - name: netcore-sdk-3-1
   image: plugins/docker
   volumes:
@@ -28,10 +24,6 @@ steps:
     dry_run: true
     purge: false
 
-  when:
-    event:
-    - push
-
 - name: netcore-runtime-3-1
   image: plugins/docker
   volumes:
@@ -42,10 +34,6 @@ steps:
     dockerfile: netcore-runtime-3-1/Dockerfile
     dry_run: true
     purge: false
-
-  when:
-    event:
-    - push
 
 volumes:
   - name: docker_sock
