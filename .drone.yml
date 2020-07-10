@@ -20,7 +20,7 @@ steps:
     path: /var/run/docker.sock
   settings:
     repo: dysnomia/apache-server
-    dockerfile: apache-reverse-proxy/Dockerfile
+    dockerfile: apache-server/Dockerfile
     dry_run: true
     purge: false
 
