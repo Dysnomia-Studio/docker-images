@@ -13,6 +13,17 @@ steps:
     dry_run: true
     purge: false
 
+- name: apache-server
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/apache-server
+    dockerfile: apache-reverse-proxy/Dockerfile
+    dry_run: true
+    purge: false
+
 - name: netcore-sdk-3-1
   image: plugins/docker
   volumes:
@@ -32,6 +43,17 @@ steps:
   settings:
     repo: dysnomia/netcore-runtime-3-1
     dockerfile: netcore-runtime-3-1/Dockerfile
+    dry_run: true
+    purge: false
+
+- name: vpn-server
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/vpn-server
+    dockerfile: vpn-server/Dockerfile
     dry_run: true
     purge: false
 
