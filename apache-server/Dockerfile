@@ -14,3 +14,5 @@ RUN a2enmod proxy_fcgi setenvif
 RUN a2enconf php7.4-fpm
 
 COPY ./apache-server/000-default.conf /etc/apache2/sites-available/000-default.conf
+
+CMD ["bash","start.sh"];
