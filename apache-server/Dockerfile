@@ -12,3 +12,5 @@ RUN apt install -y apache2 php7.4-fpm php-pgsql
 # Apache modules
 RUN a2enmod proxy_fcgi setenvif
 RUN a2enconf php7.4-fpm
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
