@@ -46,6 +46,28 @@ steps:
     dry_run: true
     purge: false
 
+- name: netcore-sdk-5-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/netcore-sdk-5-0
+    dockerfile: netcore-sdk-5-0/Dockerfile
+    dry_run: true
+    purge: false
+
+- name: netcore-runtime-5-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/netcore-runtime-5-0
+    dockerfile: netcore-runtime-5-0/Dockerfile
+    dry_run: true
+    purge: false
+
 - name: vpn-server
   image: plugins/docker
   volumes:
