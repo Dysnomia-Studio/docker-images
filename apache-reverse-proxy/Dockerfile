@@ -12,9 +12,3 @@ RUN a2enmod proxy_http
 RUN a2enmod rewrite
 RUN a2enmod ssl
 RUN a2enmod proxy_wstunnel
-
-# Certbot
-RUN wget https://dl.eff.org/certbot-auto
-RUN mv certbot-auto /usr/local/bin/certbot-auto
-RUN chown root /usr/local/bin/certbot-auto
-RUN chmod 0755 /usr/local/bin/certbot-auto
