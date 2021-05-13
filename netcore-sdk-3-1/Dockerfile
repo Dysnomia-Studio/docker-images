@@ -10,4 +10,4 @@ ENV PATH="${PATH}:/root/.dotnet/tools"
 RUN apt-get update
 RUN apt install openjdk-11-jdk -y
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs jq
