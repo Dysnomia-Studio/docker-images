@@ -6,8 +6,8 @@ RUN apt install -y curl wget
 RUN curl -sSL https://packages.sury.org/php/README.txt | bash -x
 RUN apt-get update
 
-# Apache2 server / Certbot SSL Tool / User tools
-RUN apt install -y apache2 php7.4-fpm php-pgsql
+# Apache2 server / PHP
+RUN apt install -y apache2 php7.4-fpm php7.4-pgsql
 
 # Apache modules
 RUN a2enmod proxy_fcgi setenvif rewrite
