@@ -21,4 +21,7 @@ COPY ./apache-server/start.sh /start.sh
 
 RUN chown -R www-data:www-data /var/www/
 
+RUN apt-get install -y curl
+HEALTHCHECK --interval=5m --timeout=3s CMD service apache2 status && service php7.4-fpm status && curl -f http://localhost/ || exit 1
+
 CMD ["bash","/start.sh"];
