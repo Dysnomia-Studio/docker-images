@@ -46,6 +46,28 @@ steps:
     dry_run: true
     purge: false
 
+- name: net-sdk-6-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/net-sdk-6-0
+    dockerfile: net-sdk-6-0/Dockerfile
+    dry_run: true
+    purge: false
+
+- name: net-runtime-6-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/net-runtime-6-0
+    dockerfile: net-runtime-6-0/Dockerfile
+    dry_run: true
+    purge: false
+
 - name: vpn-server
   image: plugins/docker
   volumes:
