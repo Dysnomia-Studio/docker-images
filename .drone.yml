@@ -24,28 +24,6 @@ steps:
     dry_run: true
     purge: false
 
-- name: netcore-sdk-3-1
-  image: plugins/docker
-  volumes:
-  - name: docker_sock
-    path: /var/run/docker.sock
-  settings:
-    repo: dysnomia/netcore-sdk-3-1
-    dockerfile: netcore-sdk-3-1/Dockerfile
-    dry_run: true
-    purge: false
-
-- name: netcore-runtime-3-1
-  image: plugins/docker
-  volumes:
-  - name: docker_sock
-    path: /var/run/docker.sock
-  settings:
-    repo: dysnomia/netcore-runtime-3-1
-    dockerfile: netcore-runtime-3-1/Dockerfile
-    dry_run: true
-    purge: false
-
 - name: net-sdk-5-0
   image: plugins/docker
   volumes:
