@@ -13,5 +13,6 @@ RUN a2enmod rewrite
 RUN a2enmod ssl
 RUN a2enmod proxy_wstunnel
 RUN a2enmod cache_disk
+RUN a2enmod http2
 
 HEALTHCHECK --interval=5m --timeout=3s CMD service apache2 status && curl -f http://localhost/ || exit 1
