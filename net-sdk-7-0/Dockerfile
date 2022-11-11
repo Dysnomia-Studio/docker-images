@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 WORKDIR /app
 
 # Install sonarScanner
@@ -11,5 +11,5 @@ RUN apt-get update
 # Next line fix openjdk11 install
 RUN mkdir -p /usr/share/man/man1
 RUN apt install openjdk-11-jdk -y
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get install -y nodejs jq

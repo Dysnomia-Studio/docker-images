@@ -24,28 +24,6 @@ steps:
     dry_run: true
     purge: false
 
-- name: net-sdk-5-0
-  image: plugins/docker
-  volumes:
-  - name: docker_sock
-    path: /var/run/docker.sock
-  settings:
-    repo: dysnomia/net-sdk-5-0
-    dockerfile: net-sdk-5-0/Dockerfile
-    dry_run: true
-    purge: false
-
-- name: net-runtime-5-0
-  image: plugins/docker
-  volumes:
-  - name: docker_sock
-    path: /var/run/docker.sock
-  settings:
-    repo: dysnomia/net-runtime-5-0
-    dockerfile: net-runtime-5-0/Dockerfile
-    dry_run: true
-    purge: false
-
 - name: net-sdk-6-0
   image: plugins/docker
   volumes:
@@ -65,6 +43,28 @@ steps:
   settings:
     repo: dysnomia/net-runtime-6-0
     dockerfile: net-runtime-6-0/Dockerfile
+    dry_run: true
+    purge: false
+
+- name: net-sdk-7-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/net-sdk-7-0
+    dockerfile: net-sdk-7-0/Dockerfile
+    dry_run: true
+    purge: false
+
+- name: net-runtime-7-0
+  image: plugins/docker
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  settings:
+    repo: dysnomia/net-runtime-7-0
+    dockerfile: net-runtime-7-0/Dockerfile
     dry_run: true
     purge: false
 
