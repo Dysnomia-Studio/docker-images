@@ -10,11 +10,11 @@ RUN sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /
 RUN apt-get update
 
 # Apache2 server / PHP
-RUN apt install -y apache2 php7.4-fpm php7.4-pgsql
+RUN apt install -y apache2 php8.1-fpm php8.1-pgsql
 
 # Apache modules
 RUN a2enmod proxy_fcgi setenvif rewrite
-RUN a2enconf php7.4-fpm
+RUN a2enconf php8.1-fpm
 
 COPY ./apache-server/000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY ./apache-server/start.sh /start.sh
@@ -22,6 +22,6 @@ COPY ./apache-server/start.sh /start.sh
 RUN chown -R www-data:www-data /var/www/
 
 RUN apt-get install -y curl
-HEALTHCHECK --interval=5m --timeout=3s CMD service apache2 status && service php7.4-fpm status && curl -f http://localhost/ || exit 1
+HEALTHCHECK --interval=5m --timeout=3s CMD service apache2 status && service php8.1-fpm status && curl -f http://localhost/ || exit 1
 
 CMD ["bash","/start.sh"];
