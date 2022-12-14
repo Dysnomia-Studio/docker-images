@@ -13,3 +13,6 @@ RUN mkdir -p /usr/share/man/man1
 RUN apt install openjdk-11-jdk -y
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get install -y nodejs jq
+
+# Install dotnet-coverage
+RUN dotnet tool install --global dotnet-coverage
