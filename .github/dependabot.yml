@@ -5,10 +5,6 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "docker"
-    directory: "/apache-reverse-proxy"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "docker"
     directory: "/apache-server"
     schedule:
       interval: "monthly"
@@ -19,4 +15,8 @@ updates:
   - package-ecosystem: "docker"
     directory: "/net-sdk-7-0"
     schedule:
-      interval: "monthly"      
+      interval: "monthly"
+  - package-ecosystem: "docker"
+    directory: "/sonarqube"
+    schedule:
+      interval: "monthly"

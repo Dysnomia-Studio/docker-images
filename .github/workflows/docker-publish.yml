@@ -23,7 +23,7 @@ jobs:
   build:
     strategy:
       matrix:
-        folder: ["apache-reverse-proxy", "apache-server", "net-runtime-7-0", "net-sdk-7-0"]
+        folder: ["apache-server", "net-runtime-7-0", "net-sdk-7-0", "sonarqube"]
 
     runs-on: ubuntu-latest
     permissions:
