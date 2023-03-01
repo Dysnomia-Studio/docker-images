@@ -21,7 +21,7 @@ COPY ./apache-server/start.sh /start.sh
 
 RUN chown -R www-data:www-data /var/www/
 
-RUN sed -i /\;clear_env\ \=\ no/clear_env\ \=\ no/ /etc/php/8.1/fpm/pool.d/www.conf
+RUN sed -i s/\;clear_env\ \=\ no/clear_env\ \=\ no/ /etc/php/8.1/fpm/pool.d/www.conf
 
 RUN apt-get install -y curl
 HEALTHCHECK --interval=5m --timeout=3s CMD service apache2 status && service php8.1-fpm status && curl -f http://localhost/ || exit 1
