@@ -1,5 +1,5 @@
-FROM sonarqube:9.9-community
-ADD https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.14.0/sonarqube-community-branch-plugin-1.14.0.jar /opt/sonarqube/extensions/plugins/
+FROM sonarqube:10.1-community
+ADD ./sonarqube/sonarqube-community-branch-plugin-1.16.0-SNAPSHOT.jar /opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.16.0-SNAPSHOT.jar
 USER root
-RUN chown sonarqube:sonarqube /opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar
+RUN chown sonarqube:sonarqube /opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.16.0-SNAPSHOT.jar
 USER sonarqube
