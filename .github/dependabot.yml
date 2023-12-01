@@ -9,14 +9,6 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "docker"
-    directory: "/net-runtime-7-0"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "docker"
-    directory: "/net-sdk-7-0"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "docker"
     directory: "/sonarqube"
     schedule:
       interval: "monthly"

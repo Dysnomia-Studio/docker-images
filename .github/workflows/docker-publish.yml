@@ -23,7 +23,7 @@ jobs:
   build:
     strategy:
       matrix:
-        folder: ["apache-server", "net-runtime-7-0", "net-sdk-7-0", "sonarqube"]
+        folder: ["apache-server", "net-runtime-7-0", "net-sdk-7-0", "net-runtime-8-0", "net-sdk-8-0", "sonarqube"]
 
     runs-on: ubuntu-latest
     permissions:
