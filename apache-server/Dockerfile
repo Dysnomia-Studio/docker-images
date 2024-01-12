@@ -17,6 +17,7 @@ RUN a2enmod proxy_fcgi setenvif rewrite
 RUN a2enconf php8.1-fpm
 
 COPY ./apache-server/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY ./apache-server/security.conf /etc/apache2/conf-available/security.conf
 COPY ./apache-server/start.sh /start.sh
 
 RUN chown -R www-data:www-data /var/www/
