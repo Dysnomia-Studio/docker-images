@@ -1,6 +1,6 @@
-FROM sonarqube:10.3-community
-ADD https://github.com/iSergio/sonarqube-community-branch-plugin/releases/download/1.16.1/sonarqube-community-branch-plugin-1.16.1-SNAPSHOT.jar /opt/sonarqube/extensions/plugins/
-ADD https://github.com/elegoff/sonar-rust/releases/download/v0.2.2/community-rust-plugin-0.2.2.jar /opt/sonarqube/extensions/plugins/
+FROM sonarqube:10.4-community
+ADD https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.19.0/sonarqube-community-branch-plugin-1.19.0.jar /opt/sonarqube/extensions/plugins/
+ADD https://github.com/C4tWithShell/community-rust/releases/download/v0.2.3/community-rust-plugin-0.2.3.jar /opt/sonarqube/extensions/plugins/
 USER root
-RUN chown sonarqube:sonarqube /opt/sonarqube/extensions/plugins/*.jar
+RUN chown sonarqube /opt/sonarqube/extensions/plugins/*.jar
 USER sonarqube
