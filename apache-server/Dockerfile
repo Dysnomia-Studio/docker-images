@@ -20,6 +20,8 @@ COPY ./apache-server/000-default.conf /etc/apache2/sites-available/000-default.c
 COPY ./apache-server/security.conf /etc/apache2/conf-available/security.conf
 COPY ./apache-server/start.sh /start.sh
 
+RUN chmod +x /start.sh
+
 RUN chown -R www-data:www-data /var/www/
 
 RUN sed -i s/\;clear_env\ \=\ no/clear_env\ \=\ no/ /etc/php/8.3/fpm/pool.d/www.conf
