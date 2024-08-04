@@ -11,7 +11,7 @@ RUN apt-get update
 # Next line fix openjdk11 install
 RUN mkdir -p /usr/share/man/man1
 RUN apt install openjdk-17-jdk -y
-RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get install -y nodejs jq
 
 # Install dotnet-coverage
