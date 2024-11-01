@@ -9,6 +9,10 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "docker"
+    directory: "/postgres"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "docker"
     directory: "/sonarqube"
     schedule:
       interval: "monthly"
