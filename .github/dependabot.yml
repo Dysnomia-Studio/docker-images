@@ -13,6 +13,10 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "docker"
+    directory: "/redmine"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "docker"
     directory: "/sonarqube"
     schedule:
       interval: "monthly"

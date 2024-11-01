@@ -23,7 +23,7 @@ jobs:
   build:
     strategy:
       matrix:
-        folder: ["apache-server", "net-runtime-8-0", "net-sdk-8-0", "postgres", "sonarqube"]
+        folder: ["apache-server", "net-runtime-8-0", "net-sdk-8-0", "postgres", "redmine", "sonarqube"]
 
     runs-on: ubuntu-latest
     permissions:
