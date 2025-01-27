@@ -9,10 +9,6 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "docker"
-    directory: "/postgres"
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "docker"
     directory: "/redmine"
     schedule:
       interval: "monthly"
