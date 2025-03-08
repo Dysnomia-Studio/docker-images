@@ -16,12 +16,13 @@ RUN dotnet restore Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --ignore-f
 RUN dotnet publish Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --no-restore -c Release -o out
 # RUN dotnet-coverage collect 'dotnet test --no-build --verbosity normal Lumen.App/Lumen.App.Sln' -f xml  -o 'coverage.xml'
 
-# Modules
+# Modules - Dependencies
 RUN apt update && apt install unzip
-RUN mkdir -p out/modules/Lumen.Modules.Youtube-6.2.0/
-ADD https://github.com/L-U-M-E-N/lumen-module-youtube/releases/download/6.2.0/Lumen.Modules.Youtube-6.2.0.zip Lumen.Modules.Youtube-6.2.0.zip
-RUN unzip Lumen.Modules.Youtube-6.2.0.zip -d Lumen.Modules.Youtube-6.2.0/
-RUN mv Lumen.Modules.Youtube-6.2.0/out/* out/modules/Lumen.Modules.Youtube-6.2.0/
+RUN mkdir -p out/modules/
+
+## Modules - Youtube
+ADD https://github.com/L-U-M-E-N/lumen-module-youtube/releases/download/6.2.2/Lumen.Modules.Youtube-6.2.2.zip Lumen.Modules.Youtube-6.2.2.zip
+RUN unzip Lumen.Modules.Youtube-6.2.2.zip -d out/modules/Lumen.Modules.Youtube-6.2.2/
 
 # Build runtime image
 FROM ghcr.io/dysnomia-studio/net-runtime-9-0:main
