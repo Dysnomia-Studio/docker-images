@@ -25,8 +25,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.2.4/L
 RUN unzip Lumen.Modules.Youtube-6.2.4.zip -d out/modules/Lumen.Modules.Youtube-6.2.4/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.0.0/Lumen.Modules.SteamPartner-6.0.0.zip Lumen.Modules.SteamPartner-6.0.0.zip
-RUN unzip Lumen.Modules.SteamPartner-6.0.0.zip -d out/modules/Lumen.Modules.SteamPartner-6.0.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.0.1/Lumen.Modules.SteamPartner-6.0.1.zip Lumen.Modules.SteamPartner-6.0.1.zip
+RUN unzip Lumen.Modules.SteamPartner-6.0.1.zip -d out/modules/Lumen.Modules.SteamPartner-6.0.1/
 
 # Build runtime image
 FROM ghcr.io/dysnomia-studio/net-runtime-9-0:main
