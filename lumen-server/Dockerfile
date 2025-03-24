@@ -21,8 +21,8 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - Youtube
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.2.4/Lumen.Modules.Youtube-6.2.4.zip Lumen.Modules.Youtube-6.2.4.zip
-RUN unzip Lumen.Modules.Youtube-6.2.4.zip -d out/modules/Lumen.Modules.Youtube-6.2.4/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.0/Lumen.Modules.Youtube-6.3.0.zip Lumen.Modules.Youtube-6.3.0.zip
+RUN unzip Lumen.Modules.Youtube-6.3.0.zip -d out/modules/Lumen.Modules.Youtube-6.3.0/
 
 ## Modules - SteamPartner
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.0/Lumen.Modules.SteamPartner-6.1.0.zip Lumen.Modules.SteamPartner-6.1.0.zip
