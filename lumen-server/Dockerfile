@@ -21,8 +21,8 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.0.2/Lumen.Modules.GoodReads-6.0.2.zip Lumen.Modules.GoodReads-6.0.2.zip
-RUN unzip Lumen.Modules.GoodReads-6.0.2.zip -d out/modules/Lumen.Modules.GoodReads-6.0.2/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.0/Lumen.Modules.GoodReads-6.1.0.zip Lumen.Modules.GoodReads-6.1.0.zip
+RUN unzip Lumen.Modules.GoodReads-6.1.0.zip -d out/modules/Lumen.Modules.GoodReads-6.1.0/
 
 ## Modules - SteamPartner
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.0/Lumen.Modules.SteamPartner-6.1.0.zip Lumen.Modules.SteamPartner-6.1.0.zip
