@@ -21,20 +21,20 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.0/Lumen.Modules.GoodReads-6.1.0.zip Lumen.Modules.GoodReads-6.1.0.zip
-RUN unzip Lumen.Modules.GoodReads-6.1.0.zip -d out/modules/Lumen.Modules.GoodReads-6.1.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.1/Lumen.Modules.GoodReads-6.1.1.zip Lumen.Modules.GoodReads-6.1.1.zip
+RUN unzip Lumen.Modules.GoodReads-6.1.1.zip -d out/modules/Lumen.Modules.GoodReads-6.1.1/
 
 ## Modules - NotABot
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.0.0/Lumen.Modules.NotABot-6.0.0.zip Lumen.Modules.NotABot-6.0.0.zip
 RUN unzip Lumen.Modules.NotABot-6.0.0.zip -d out/modules/Lumen.Modules.NotABot-6.0.0/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.0/Lumen.Modules.SteamPartner-6.1.0.zip Lumen.Modules.SteamPartner-6.1.0.zip
-RUN unzip Lumen.Modules.SteamPartner-6.1.0.zip -d out/modules/Lumen.Modules.SteamPartner-6.1.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.1/Lumen.Modules.SteamPartner-6.1.1.zip Lumen.Modules.SteamPartner-6.1.1.zip
+RUN unzip Lumen.Modules.SteamPartner-6.1.1.zip -d out/modules/Lumen.Modules.SteamPartner-6.1.1/
 
 ## Modules - Youtube
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.0/Lumen.Modules.Youtube-6.3.0.zip Lumen.Modules.Youtube-6.3.0.zip
-RUN unzip Lumen.Modules.Youtube-6.3.0.zip -d out/modules/Lumen.Modules.Youtube-6.3.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.1/Lumen.Modules.Youtube-6.3.1.zip Lumen.Modules.Youtube-6.3.1.zip
+RUN unzip Lumen.Modules.Youtube-6.3.1.zip -d out/modules/Lumen.Modules.Youtube-6.3.1/
 
 # Build runtime image
 FROM ghcr.io/dysnomia-studio/net-runtime-9-0:main
