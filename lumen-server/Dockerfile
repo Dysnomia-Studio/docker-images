@@ -25,8 +25,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.1
 RUN unzip Lumen.Modules.GoodReads-6.1.1.zip -d out/modules/Lumen.Modules.GoodReads-6.1.1/
 
 ## Modules - NotABot
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.1.3/Lumen.Modules.NotABot-6.1.3.zip Lumen.Modules.NotABot-6.1.3.zip
-RUN unzip Lumen.Modules.NotABot-6.1.3.zip -d out/modules/Lumen.Modules.NotABot-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.1.4/Lumen.Modules.NotABot-6.1.4.zip Lumen.Modules.NotABot-6.1.4.zip
+RUN unzip Lumen.Modules.NotABot-6.1.4.zip -d out/modules/Lumen.Modules.NotABot-6.1.4/
 
 ## Modules - SteamPartner
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.1/Lumen.Modules.SteamPartner-6.1.1.zip Lumen.Modules.SteamPartner-6.1.1.zip
