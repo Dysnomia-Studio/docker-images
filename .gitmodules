@@ -1,6 +1,6 @@
 [submodule "redmine/plugins/redmine_messenger"]
 	path = redmine/plugins/redmine_messenger
 	url = https://github.com/AlphaNodes/redmine_messenger.git
-[submodule "redmine/themes/PurpleMine2-master"]
-	path = redmine/themes/PurpleMine2-master
-	url = https://github.com/Dysnomia-Studio/PurpleMine2-custom-fork.git
+[submodule "redmine/themes/opale"]
+	path = redmine/themes/opale
+	url = https://github.com/gagnieray/opale
