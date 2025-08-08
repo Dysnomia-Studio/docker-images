@@ -33,8 +33,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.1.7/L
 RUN unzip Lumen.Modules.NotABot-6.1.7.zip -d out/modules/Lumen.Modules.NotABot-6.1.7/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.1.3/Lumen.Modules.SteamPartner-6.1.3.zip Lumen.Modules.SteamPartner-6.1.3.zip
-RUN unzip Lumen.Modules.SteamPartner-6.1.3.zip -d out/modules/Lumen.Modules.SteamPartner-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.2.0/Lumen.Modules.SteamPartner-6.2.0.zip Lumen.Modules.SteamPartner-6.2.0.zip
+RUN unzip Lumen.Modules.SteamPartner-6.2.0.zip -d out/modules/Lumen.Modules.SteamPartner-6.2.0/
 
 ## Modules - Youtube
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.3/Lumen.Modules.Youtube-6.3.3.zip Lumen.Modules.Youtube-6.3.3.zip
