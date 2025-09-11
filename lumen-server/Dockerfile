@@ -25,8 +25,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.0.0/Lu
 RUN unzip Lumen.Modules.Enedis-6.0.0.zip -d out/modules/Lumen.Modules.Enedis-6.0.0/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.3/Lumen.Modules.GoodReads-6.1.3.zip Lumen.Modules.GoodReads-6.1.3.zip
-RUN unzip Lumen.Modules.GoodReads-6.1.3.zip -d out/modules/Lumen.Modules.GoodReads-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.4/Lumen.Modules.GoodReads-6.1.4.zip Lumen.Modules.GoodReads-6.1.4.zip
+RUN unzip Lumen.Modules.GoodReads-6.1.4.zip -d out/modules/Lumen.Modules.GoodReads-6.1.4/
 
 ## Modules - GRDF
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.0.1/Lumen.Modules.GRDF-6.0.1.zip Lumen.Modules.GRDF-6.0.1.zip
