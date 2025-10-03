@@ -1,14 +1,14 @@
-FROM sonarqube:25.8.0.112029-community
+FROM sonarqube:25.9.0.112764-community
 
 # Install plugins
-ADD https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.8.0/sonarqube-community-branch-plugin-25.8.0.jar /opt/sonarqube/extensions/plugins/
+ADD https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.9.0/sonarqube-community-branch-plugin-25.9.0.jar /opt/sonarqube/extensions/plugins/
 USER root
 RUN chown sonarqube /opt/sonarqube/extensions/plugins/*.jar
 
 # Fix webapp for sonarqube-community-branch-plugin
 RUN apt-get update && \
     apt-get --no-install-recommends -y install unzip && \
-    wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.8.0/sonarqube-webapp.zip && \
+    wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.9.0/sonarqube-webapp.zip && \
     rm -rf /opt/sonarqube/web/* && \
     unzip sonarqube-webapp.zip -d /opt/sonarqube/web && \
     chown -R sonarqube:root /opt/sonarqube/web && \
