@@ -23,7 +23,7 @@ jobs:
   build:
     strategy:
       matrix:
-        folder: ["apache-server", "lumen-server", "net-runtime-8-0", "net-sdk-8-0", "net-runtime-9-0", "net-sdk-9-0", "redmine", "sonarqube"]
+        folder: ["apache-server", "lumen-server", "net-runtime-9-0", "net-sdk-9-0", "redmine", "sonarqube"]
 
     runs-on: ubuntu-latest
     permissions:
