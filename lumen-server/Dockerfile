@@ -21,28 +21,28 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - Enedis
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.0.2/Lumen.Modules.Enedis-6.0.2.zip Lumen.Modules.Enedis-6.0.2.zip
-RUN unzip Lumen.Modules.Enedis-6.0.2.zip -d out/modules/Lumen.Modules.Enedis-6.0.2/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.0.3/Lumen.Modules.Enedis-6.0.3.zip Lumen.Modules.Enedis-6.0.3.zip
+RUN unzip Lumen.Modules.Enedis-6.0.3.zip -d out/modules/Lumen.Modules.Enedis-6.0.3/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.5/Lumen.Modules.GoodReads-6.1.5.zip Lumen.Modules.GoodReads-6.1.5.zip
-RUN unzip Lumen.Modules.GoodReads-6.1.5.zip -d out/modules/Lumen.Modules.GoodReads-6.1.5/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.1.6/Lumen.Modules.GoodReads-6.1.6.zip Lumen.Modules.GoodReads-6.1.6.zip
+RUN unzip Lumen.Modules.GoodReads-6.1.6.zip -d out/modules/Lumen.Modules.GoodReads-6.1.6/
 
 ## Modules - GRDF
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.0.3/Lumen.Modules.GRDF-6.0.3.zip Lumen.Modules.GRDF-6.0.3.zip
-RUN unzip Lumen.Modules.GRDF-6.0.3.zip -d out/modules/Lumen.Modules.GRDF-6.0.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.0.4/Lumen.Modules.GRDF-6.0.4.zip Lumen.Modules.GRDF-6.0.4.zip
+RUN unzip Lumen.Modules.GRDF-6.0.4.zip -d out/modules/Lumen.Modules.GRDF-6.0.4/
 
 ## Modules - NotABot
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.1.8/Lumen.Modules.NotABot-6.1.8.zip Lumen.Modules.NotABot-6.1.8.zip
-RUN unzip Lumen.Modules.NotABot-6.1.8.zip -d out/modules/Lumen.Modules.NotABot-6.1.8/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.1.9/Lumen.Modules.NotABot-6.1.9.zip Lumen.Modules.NotABot-6.1.9.zip
+RUN unzip Lumen.Modules.NotABot-6.1.9.zip -d out/modules/Lumen.Modules.NotABot-6.1.9/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.2.3/Lumen.Modules.SteamPartner-6.2.3.zip Lumen.Modules.SteamPartner-6.2.3.zip
-RUN unzip Lumen.Modules.SteamPartner-6.2.3.zip -d out/modules/Lumen.Modules.SteamPartner-6.2.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.2.4/Lumen.Modules.SteamPartner-6.2.4.zip Lumen.Modules.SteamPartner-6.2.4.zip
+RUN unzip Lumen.Modules.SteamPartner-6.2.4.zip -d out/modules/Lumen.Modules.SteamPartner-6.2.4/
 
 ## Modules - Youtube
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.4/Lumen.Modules.Youtube-6.3.4.zip Lumen.Modules.Youtube-6.3.4.zip
-RUN unzip Lumen.Modules.Youtube-6.3.4.zip -d out/modules/Lumen.Modules.Youtube-6.3.4/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.3.5/Lumen.Modules.Youtube-6.3.5.zip Lumen.Modules.Youtube-6.3.5.zip
+RUN unzip Lumen.Modules.Youtube-6.3.5.zip -d out/modules/Lumen.Modules.Youtube-6.3.5/
 
 # Build runtime image
 FROM ghcr.io/dysnomia-studio/net-runtime-9-0:main
