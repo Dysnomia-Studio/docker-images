@@ -37,8 +37,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.2/Lume
 RUN unzip Lumen.Modules.GRDF-6.1.2.zip -d out/modules/Lumen.Modules.GRDF-6.1.2/
 
 ## Modules - NotABot
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.1/Lumen.Modules.NotABot-6.2.1.zip Lumen.Modules.NotABot-6.2.1.zip
-RUN unzip Lumen.Modules.NotABot-6.2.1.zip -d out/modules/Lumen.Modules.NotABot-6.2.1/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.2/Lumen.Modules.NotABot-6.2.2.zip Lumen.Modules.NotABot-6.2.2.zip
+RUN unzip Lumen.Modules.NotABot-6.2.2.zip -d out/modules/Lumen.Modules.NotABot-6.2.2/
 
 ## Modules - SteamPartner
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.3.1/Lumen.Modules.SteamPartner-6.3.1.zip Lumen.Modules.SteamPartner-6.3.1.zip
