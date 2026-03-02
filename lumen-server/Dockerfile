@@ -21,8 +21,8 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - Enedis
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.1/Lumen.Modules.Enedis-6.1.1.zip Lumen.Modules.Enedis-6.1.1.zip
-RUN unzip Lumen.Modules.Enedis-6.1.1.zip -d out/modules/Lumen.Modules.Enedis-6.1.1/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.2/Lumen.Modules.Enedis-6.1.2.zip Lumen.Modules.Enedis-6.1.2.zip
+RUN unzip Lumen.Modules.Enedis-6.1.2.zip -d out/modules/Lumen.Modules.Enedis-6.1.2/
 
 ## Modules - FocusStats
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.2/Lumen.Modules.FocusStats-6.1.2.zip Lumen.Modules.FocusStats-6.1.2.zip
