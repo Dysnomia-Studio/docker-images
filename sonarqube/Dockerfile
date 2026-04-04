@@ -1,4 +1,4 @@
-FROM sonarqube:26.2.0.119303-community
+FROM sonarqube:26.3.0.120487-community
 
 # Install plugins
 ADD https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/26.2.0/sonarqube-community-branch-plugin-26.2.0.jar /opt/sonarqube/extensions/plugins/
