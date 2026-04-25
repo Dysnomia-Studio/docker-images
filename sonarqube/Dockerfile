@@ -14,7 +14,6 @@ RUN apt-get update && \
     chown -R sonarqube:root /opt/sonarqube/web && \
     chmod -R 550 /opt/sonarqube/web && \
     apt-get remove -y unzip && \
-    rm sonarqube-webapp.zip && \
-    apt-get clean
+    rm sonarqube-webapp.zip
 
 USER sonarqube
