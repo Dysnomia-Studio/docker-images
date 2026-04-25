@@ -7,13 +7,14 @@ RUN chown sonarqube /opt/sonarqube/extensions/plugins/*.jar
 
 # Fix webapp for sonarqube-community-branch-plugin
 RUN apt-get update && \
-    apt-get --no-install-recommends -y install unzip && \
+    apt-get --no-install-recommends -y install unzip wget && \
     wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/26.4.0/sonarqube-webapp.zip && \
     rm -rf /opt/sonarqube/web/* && \
     unzip sonarqube-webapp.zip -d /opt/sonarqube/web && \
     chown -R sonarqube:root /opt/sonarqube/web && \
     chmod -R 550 /opt/sonarqube/web && \
     apt-get remove -y unzip && \
-    rm sonarqube-webapp.zip
+    rm sonarqube-webapp.zip && \
+    apt-get clean
 
 USER sonarqube
