@@ -29,8 +29,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.3/Lu
 RUN unzip Lumen.Modules.Enedis-6.1.3.zip -d out/modules/Lumen.Modules.Enedis-6.1.3/
 
 ## Modules - FocusStats
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.3/Lumen.Modules.FocusStats-6.1.3.zip Lumen.Modules.FocusStats-6.1.3.zip
-RUN unzip Lumen.Modules.FocusStats-6.1.3.zip -d out/modules/Lumen.Modules.FocusStats-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.5/Lumen.Modules.FocusStats-6.1.5.zip Lumen.Modules.FocusStats-6.1.5.zip
+RUN unzip Lumen.Modules.FocusStats-6.1.5.zip -d out/modules/Lumen.Modules.FocusStats-6.1.5/
 
 ## Modules - GoodReads
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.2/Lumen.Modules.GoodReads-6.2.2.zip Lumen.Modules.GoodReads-6.2.2.zip
