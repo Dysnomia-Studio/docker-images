@@ -10,7 +10,7 @@ ARG GHP_TOKEN
 # Build Project
 COPY . ./
 
-RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git
+RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git --branch 6.0.0 --single-branch
 RUN ls
 RUN dotnet restore Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --no-restore -c Release -o out
@@ -21,36 +21,36 @@ RUN apt update && apt install unzip
 RUN mkdir -p out/modules/
 
 ## Modules - Calendar
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Calendar/releases/download/6.0.0/Lumen.Modules.Calendar-6.0.0.zip Lumen.Modules.Calendar-6.0.0.zip
-RUN unzip Lumen.Modules.Calendar-6.0.0.zip -d out/modules/Lumen.Modules.Calendar-6.0.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Calendar/releases/download/6.0.1/Lumen.Modules.Calendar-6.0.1.zip Lumen.Modules.Calendar-6.0.1.zip
+RUN unzip Lumen.Modules.Calendar-6.0.1.zip -d out/modules/Lumen.Modules.Calendar-6.0.1/
 
 ## Modules - Enedis
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.3/Lumen.Modules.Enedis-6.1.3.zip Lumen.Modules.Enedis-6.1.3.zip
-RUN unzip Lumen.Modules.Enedis-6.1.3.zip -d out/modules/Lumen.Modules.Enedis-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.4/Lumen.Modules.Enedis-6.1.4.zip Lumen.Modules.Enedis-6.1.4.zip
+RUN unzip Lumen.Modules.Enedis-6.1.4.zip -d out/modules/Lumen.Modules.Enedis-6.1.4/
 
 ## Modules - FocusStats
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.5/Lumen.Modules.FocusStats-6.1.5.zip Lumen.Modules.FocusStats-6.1.5.zip
-RUN unzip Lumen.Modules.FocusStats-6.1.5.zip -d out/modules/Lumen.Modules.FocusStats-6.1.5/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.6/Lumen.Modules.FocusStats-6.1.6.zip Lumen.Modules.FocusStats-6.1.6.zip
+RUN unzip Lumen.Modules.FocusStats-6.1.6.zip -d out/modules/Lumen.Modules.FocusStats-6.1.6/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.2/Lumen.Modules.GoodReads-6.2.2.zip Lumen.Modules.GoodReads-6.2.2.zip
-RUN unzip Lumen.Modules.GoodReads-6.2.2.zip -d out/modules/Lumen.Modules.GoodReads-6.2.2/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.3/Lumen.Modules.GoodReads-6.2.3.zip Lumen.Modules.GoodReads-6.2.3.zip
+RUN unzip Lumen.Modules.GoodReads-6.2.3.zip -d out/modules/Lumen.Modules.GoodReads-6.2.3/
 
 ## Modules - GRDF
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.3/Lumen.Modules.GRDF-6.1.3.zip Lumen.Modules.GRDF-6.1.3.zip
-RUN unzip Lumen.Modules.GRDF-6.1.3.zip -d out/modules/Lumen.Modules.GRDF-6.1.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.4/Lumen.Modules.GRDF-6.1.4.zip Lumen.Modules.GRDF-6.1.4.zip
+RUN unzip Lumen.Modules.GRDF-6.1.4.zip -d out/modules/Lumen.Modules.GRDF-6.1.4/
 
 ## Modules - NotABot
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.3/Lumen.Modules.NotABot-6.2.3.zip Lumen.Modules.NotABot-6.2.3.zip
-RUN unzip Lumen.Modules.NotABot-6.2.3.zip -d out/modules/Lumen.Modules.NotABot-6.2.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.5/Lumen.Modules.NotABot-6.2.5.zip Lumen.Modules.NotABot-6.2.5.zip
+RUN unzip Lumen.Modules.NotABot-6.2.5.zip -d out/modules/Lumen.Modules.NotABot-6.2.5/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.3.2/Lumen.Modules.SteamPartner-6.3.2.zip Lumen.Modules.SteamPartner-6.3.2.zip
-RUN unzip Lumen.Modules.SteamPartner-6.3.2.zip -d out/modules/Lumen.Modules.SteamPartner-6.3.2/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.3.3/Lumen.Modules.SteamPartner-6.3.3.zip Lumen.Modules.SteamPartner-6.3.3.zip
+RUN unzip Lumen.Modules.SteamPartner-6.3.3.zip -d out/modules/Lumen.Modules.SteamPartner-6.3.3/
 
 ## Modules - Youtube
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.4.3/Lumen.Modules.Youtube-6.4.3.zip Lumen.Modules.Youtube-6.4.3.zip
-RUN unzip Lumen.Modules.Youtube-6.4.3.zip -d out/modules/Lumen.Modules.Youtube-6.4.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.4.4/Lumen.Modules.Youtube-6.4.4.zip Lumen.Modules.Youtube-6.4.4.zip
+RUN unzip Lumen.Modules.Youtube-6.4.4.zip -d out/modules/Lumen.Modules.Youtube-6.4.4/
 
 # Build runtime image
 FROM ghcr.io/dysnomia-studio/net-runtime-10-0:main
