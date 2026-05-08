@@ -37,8 +37,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.3
 RUN unzip Lumen.Modules.GoodReads-6.2.3.zip -d out/modules/Lumen.Modules.GoodReads-6.2.3/
 
 ## Modules - GRDF
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.4/Lumen.Modules.GRDF-6.1.4.zip Lumen.Modules.GRDF-6.1.4.zip
-RUN unzip Lumen.Modules.GRDF-6.1.4.zip -d out/modules/Lumen.Modules.GRDF-6.1.4/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.5/Lumen.Modules.GRDF-6.1.5.zip Lumen.Modules.GRDF-6.1.5.zip
+RUN unzip Lumen.Modules.GRDF-6.1.5.zip -d out/modules/Lumen.Modules.GRDF-6.1.5/
 
 ## Modules - NotABot
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.5/Lumen.Modules.NotABot-6.2.5.zip Lumen.Modules.NotABot-6.2.5.zip
