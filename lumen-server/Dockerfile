@@ -33,8 +33,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.
 RUN unzip Lumen.Modules.FocusStats-6.1.6.zip -d out/modules/Lumen.Modules.FocusStats-6.1.6/
 
 ## Modules - GoodReads
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.3/Lumen.Modules.GoodReads-6.2.3.zip Lumen.Modules.GoodReads-6.2.3.zip
-RUN unzip Lumen.Modules.GoodReads-6.2.3.zip -d out/modules/Lumen.Modules.GoodReads-6.2.3/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.GoodReads/releases/download/6.2.4/Lumen.Modules.GoodReads-6.2.4.zip Lumen.Modules.GoodReads-6.2.4.zip
+RUN unzip Lumen.Modules.GoodReads-6.2.4.zip -d out/modules/Lumen.Modules.GoodReads-6.2.4/
 
 ## Modules - GRDF
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.GRDF/releases/download/6.1.5/Lumen.Modules.GRDF-6.1.5.zip Lumen.Modules.GRDF-6.1.5.zip
