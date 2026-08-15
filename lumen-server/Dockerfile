@@ -29,8 +29,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Enedis/releases/download/6.1.5/Lu
 RUN unzip Lumen.Modules.Enedis-6.1.5.zip -d out/modules/Lumen.Modules.Enedis-6.1.5/
 
 ## Modules - EnergyConsumption
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.EnergyConsumption/releases/download/6.0.1/Lumen.Modules.EnergyConsumption-6.0.1.zip Lumen.Modules.EnergyConsumption-6.0.1.zip
-RUN unzip Lumen.Modules.EnergyConsumption-6.0.1.zip -d out/modules/Lumen.Modules.EnergyConsumption-6.0.1/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.EnergyConsumption/releases/download/6.0.2/Lumen.Modules.EnergyConsumption-6.0.2.zip Lumen.Modules.EnergyConsumption-6.0.2.zip
+RUN unzip Lumen.Modules.EnergyConsumption-6.0.2.zip -d out/modules/Lumen.Modules.EnergyConsumption-6.0.2/
 
 ## Modules - FocusStats
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.FocusStats/releases/download/6.1.7/Lumen.Modules.FocusStats-6.1.7.zip Lumen.Modules.FocusStats-6.1.7.zip
