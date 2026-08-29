@@ -1,6 +1,3 @@
-[submodule "redmine/plugins/redmine_messenger"]
-	path = redmine/plugins/redmine_messenger
-	url = https://github.com/AlphaNodes/redmine_messenger.git
 [submodule "redmine/themes/opale"]
 	path = redmine/themes/opale
 	url = https://github.com/gagnieray/opale
