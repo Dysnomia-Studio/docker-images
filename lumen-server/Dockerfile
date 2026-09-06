@@ -10,7 +10,7 @@ ARG GHP_TOKEN
 # Build Project
 COPY . ./
 
-RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git --branch 6.0.3 --single-branch
+RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git --branch 6.0.4 --single-branch
 RUN ls
 RUN dotnet restore Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --no-restore -c Release -o out
@@ -49,8 +49,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.NotABot/releases/download/6.2.7/L
 RUN unzip Lumen.Modules.NotABot-6.2.7.zip -d out/modules/Lumen.Modules.NotABot-6.2.7/
 
 ## Modules - Sleep
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.Sleep/releases/download/6.0.0/Lumen.Modules.Sleep-6.0.0.zip Lumen.Modules.Sleep-6.0.0.zip
-RUN unzip Lumen.Modules.Sleep-6.0.0.zip -d out/modules/Lumen.Modules.Sleep-6.0.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.Sleep/releases/download/6.0.1/Lumen.Modules.Sleep-6.0.1.zip Lumen.Modules.Sleep-6.0.1.zip
+RUN unzip Lumen.Modules.Sleep-6.0.1.zip -d out/modules/Lumen.Modules.Sleep-6.0.1/
 
 ## Modules - SteamPartner
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.3.5/Lumen.Modules.SteamPartner-6.3.5.zip Lumen.Modules.SteamPartner-6.3.5.zip
