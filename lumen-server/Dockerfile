@@ -10,7 +10,7 @@ ARG GHP_TOKEN
 # Build Project
 COPY . ./
 
-RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git --branch 6.0.2 --single-branch
+RUN git clone https://github.com/L-U-M-E-N/Lumen.App.git --branch 6.0.3 --single-branch
 RUN ls
 RUN dotnet restore Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Lumen.App/Lumen.App.WebAPI/Lumen.App.WebAPI.csproj --no-restore -c Release -o out
