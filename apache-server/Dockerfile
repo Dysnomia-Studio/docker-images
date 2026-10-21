@@ -1,7 +1,6 @@
 FROM debian:13
 
 RUN apt-get update
-
 RUN apt-get install -y wget apt-transport-https lsb-release ca-certificates curl
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
