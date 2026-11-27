@@ -1,4 +1,4 @@
-FROM ghcr.io/dysnomia-studio/net-sdk-10-0:main AS build-env
+FROM ghcr.io/dysnomia-studio/net-sdk-11-0:main AS build-env
 WORKDIR /app
 
 ARG SONAR_HOST_URL
@@ -61,7 +61,7 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.5.0/L
 RUN unzip Lumen.Modules.Youtube-6.5.0.zip -d out/modules/Lumen.Modules.Youtube-6.5.0/
 
 # Build runtime image
-FROM ghcr.io/dysnomia-studio/net-runtime-10-0:main
+FROM ghcr.io/dysnomia-studio/net-runtime-11-0:main
 WORKDIR /app
 COPY --from=build-env /app/out .
 RUN mkdir -p modules/
