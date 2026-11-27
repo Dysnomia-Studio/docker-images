@@ -53,8 +53,8 @@ ADD https://github.com/L-U-M-E-N/Lumen.Modules.Sleep/releases/download/6.1.0/Lum
 RUN unzip Lumen.Modules.Sleep-6.1.0.zip -d out/modules/Lumen.Modules.Sleep-6.1.0/
 
 ## Modules - SteamPartner
-ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.4.0/Lumen.Modules.SteamPartner-6.4.0.zip Lumen.Modules.SteamPartner-6.4.0.zip
-RUN unzip Lumen.Modules.SteamPartner-6.4.0.zip -d out/modules/Lumen.Modules.SteamPartner-6.4.0/
+ADD https://github.com/L-U-M-E-N/Lumen.Modules.SteamPartner/releases/download/6.4.1/Lumen.Modules.SteamPartner-6.4.1.zip Lumen.Modules.SteamPartner-6.4.1.zip
+RUN unzip Lumen.Modules.SteamPartner-6.4.1.zip -d out/modules/Lumen.Modules.SteamPartner-6.4.1/
 
 ## Modules - Youtube
 ADD https://github.com/L-U-M-E-N/Lumen.Modules.Youtube/releases/download/6.5.0/Lumen.Modules.Youtube-6.5.0.zip Lumen.Modules.Youtube-6.5.0.zip
